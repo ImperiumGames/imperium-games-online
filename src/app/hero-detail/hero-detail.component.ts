@@ -12,7 +12,8 @@ import { HeroService } from '../hero.service';
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
 
-  curpath = this.route.snapshot.url.join('/');
+  curpath = this.location.path();
+  // curpath = this.route.snapshot.url.join('/');
 
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
