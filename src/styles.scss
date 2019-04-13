@@ -1,0 +1,62 @@
+/* Application-wide Styles */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.mat-drawer-inner-container {
+    scrollbar-width: thin;
+    overflow-x: hidden !important;
+    padding-right: 0.75vw;
+    width: auto !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.4);
+}
+.border {
+    border: 2px red solid;
+}
+.pad-right-16 {
+    padding-right: 16px;
+}
+.text-left {
+    text-align: left !important;
+}
+.material-icons.md-18 {
+    margin-top: -3px;
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    margin-top: -3px;
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    margin-top: -3px;
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    margin-top: -4px;
+    font-size: 48px;
+}
+.reading {
+    font-size: 2vmin;
+    line-height: 3vmin;
+    column-count: 3;
+    column-gap: 5vmin;
+    text-align: justify;
+}

@@ -1,0 +1,42 @@
+.legend-outer {
+    width: 19.1vw;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 64px;
+    overflow: hidden;
+}
+
+.legend-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.map-container {
+    position: relative;
+    width: 100%;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 4px;
+}
+img.map {
+    width: inherit;
+    object-fit: inherit;
+    border-radius: 4px;
+}
+
+.marker-32 {
+    position: absolute;
+    width: calc(5vw / 3);
+    opacity: 0.8;
+}
+
+.marker-72 {
+    position: absolute;
+    width: calc(15vw / 4);
+    opacity: 0.8;
+}

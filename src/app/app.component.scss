@@ -1,0 +1,273 @@
+.noshadow {
+    box-shadow: none;
+}
+.noback {
+    background: inherit;
+}
+mat-expansion-panel-header {
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+}
+
+div#underconstructioncont {
+    pointer-events: none;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    right: -60px;
+    top: -60px;
+    overflow: hidden;
+    z-index: 99;
+}
+.underconstruction {
+    margin-top: 130px;
+    background-color: #a00000c0;
+    color: #ffa000;
+    transform: rotate(45deg);
+
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 40px;
+
+    z-index: 99;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-fab.to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 6;
+}
+
+.material-icons.md-48 {
+    margin-top: -4px;
+    font-size: 48px;
+}
+
+.mat-toolbar {
+    position: fixed;
+    z-index: 6;
+    overflow: hidden;
+}
+
+.content {
+    overflow: auto;
+    scrollbar-width: thin;
+    z-index: auto;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+img.wallpaper {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.page {
+    padding: 5vw;
+    margin: 0;
+}
+
+.menu-item {
+    margin-bottom: 0.5vw;
+}
+
+.menu-exp-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+$vw: 100vw;
+$wp-ar: 1/3;
+$container-width-phone: 0.9;
+$container-width-tablet-portrait: 0.8;
+$container-width-tablet-landscape: 0.7;
+$container-width-desktop: 0.618;
+$container-width-desktop-wide: 0.618;
+
+$phone: 600px;
+$tablet-portrait: 900px;
+$tablet-landscape: 1200px;
+$desktop: 1800px;
+
+@media (max-width: $phone) {
+    .container {
+        padding-top: 56px;
+        height: 100%;
+    }
+
+    .inner-div {
+        padding: 0;
+        width: calc(#{$vw} * #{$container-width-phone});
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: auto;
+    }
+    div.wallpaper {
+        position: relative;
+        width: inherit;
+        height: calc(#{$vw}* #{$container-width-phone} * #{$wp-ar});
+        margin: 0;
+    }
+
+    .menu {
+        width: 19.1vw;
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        position: fixed;
+        top: 56px;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}
+@media (min-width: $phone) and (max-width: $tablet-portrait) {
+    .container {
+        padding-top: 64px;
+        height: 100%;
+    }
+
+    .inner-div {
+        padding: 0;
+        width: calc(#{$vw} * #{$container-width-tablet-portrait});
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: 10;
+    }
+
+    div.wallpaper {
+        position: relative;
+        width: inherit;
+        height: calc(#{$vw} * #{$container-width-tablet-portrait} * #{$wp-ar});
+        margin: 0;
+    }
+
+    .menu {
+        width: 19.1vw;
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        position: fixed;
+        top: 64px;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}
+@media (min-width: $tablet-portrait) and (max-width: $tablet-landscape) {
+    .container {
+        padding-top: 64px;
+        height: 100%;
+    }
+
+    .inner-div {
+        padding: 0;
+        width: calc(#{$vw} * #{$container-width-tablet-landscape});
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: 10;
+    }
+
+    div.wallpaper {
+        position: relative;
+        width: inherit;
+        height: calc(#{$vw} * #{$container-width-tablet-landscape} * #{$wp-ar});
+        margin: 0;
+    }
+
+    .menu {
+        width: 19.1vw;
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        position: fixed;
+        top: 64px;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}
+@media (min-width: $tablet-landscape) {
+    .container {
+        padding-top: 64px;
+        height: 100%;
+    }
+
+    .inner-div {
+        padding: 0;
+        width: calc(#{$vw} * #{$container-width-desktop});
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: 10;
+    }
+
+    div.wallpaper {
+        position: relative;
+        width: inherit;
+        height: calc(#{$vw} * #{$container-width-desktop} * #{$wp-ar});
+        margin: 0;
+    }
+
+    .menu {
+        width: 19.1vw;
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        position: fixed;
+        top: 64px;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}
+@media (min-width: $desktop) {
+    .container {
+        padding-top: 64px;
+        height: 100%;
+    }
+
+    .inner-div {
+        padding: 0;
+        width: calc(#{$vw} * #{$container-width-desktop-wide});
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        z-index: 10;
+    }
+
+    div.wallpaper {
+        position: relative;
+        width: inherit;
+        height: calc(#{$vw} * #{$container-width-desktop-wide} * #{$wp-ar});
+        margin: 0;
+    }
+
+    .menu {
+        width: 19.1vw;
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        position: fixed;
+        top: 64px;
+        box-shadow: none;
+        background-color: inherit;
+    }
+}

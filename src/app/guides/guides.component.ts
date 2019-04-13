@@ -1,0 +1,83 @@
+import { Location } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+import { Guide } from './guide';
+
+@Component({
+    selector: 'app-guides',
+    templateUrl: './guides.component.html',
+    styleUrls: ['./guides.component.css']
+})
+export class GuidesComponent implements OnInit {
+    cguide: Guide = {
+        editprefix: '',
+        viewprefix: '',
+        user: '',
+        repo: '',
+        branch: '',
+        fname: ''
+    };
+
+    // = {
+    //     editprefix: 'https://github.com/',
+    //     viewprefix: 'https://raw.githubusercontent.com/',
+    //     user: 'ImperiumGames',
+    //     repo: 'guides',
+    //     branch: 'RU',
+    //     fname: ''
+    // };
+
+    // raw = 'https://raw.githubusercontent.com/';
+    // path = 'jfcere/ngx-markdown/master/README.md';
+    // rawpath = this.raw + this.path;
+
+    // https://raw.githubusercontent.com/ImperiumGames/guides/RU/brawler.md
+    curpath = this.location.path();
+    viewpath: string;
+    editpath: string;
+
+    getGuide(fname: string): void {
+        this.cguide.editprefix = 'https://github.com/';
+        this.cguide.viewprefix = 'https://raw.githubusercontent.com/';
+        this.cguide.user = 'ImperiumGames';
+        this.cguide.repo = 'guides';
+        this.cguide.branch = 'RU';
+        this.cguide.fname = fname;
+
+        this.viewpath =
+            this.cguide.viewprefix +
+            this.cguide.user +
+            '/' +
+            this.cguide.repo +
+            '/' +
+            this.cguide.branch +
+            '/' +
+            fname +
+            '.md';
+
+        this.editpath =
+            this.cguide.editprefix +
+            this.cguide.user +
+            '/' +
+            this.cguide.repo +
+            '/edit/' +
+            this.cguide.branch +
+            '/' +
+            this.cguide.fname +
+            '.md';
+    }
+
+    constructor(private route: ActivatedRoute, private location: Location) {}
+
+    ngOnInit() {
+        // this.hero$ = this.route.paramMap.pipe(switchMap((params: ParamMap) => this.service.getHero(params.get('id'))));
+        // const fname: string = this.route.snapshot.paramMap.get('fname').toString();
+
+        this.route.paramMap.subscribe(x => {
+            this.getGuide(x.get('fname'));
+            console.log(this.editpath);
+            console.log(this.viewpath);
+        });
+    }
+}
