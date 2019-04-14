@@ -5,8 +5,8 @@ branches:
     only:
         - master
 before_script:
-    - npm install -g @angular/cli
-    - npm install -g tslint
+    # - npm install -g @angular/cli
+    # - npm install -g tslint
     - cd functions
     - npm install
     - cd ..
