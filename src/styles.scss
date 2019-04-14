@@ -6,6 +6,13 @@ body {
     margin: 0;
 }
 
+.noshadow {
+    box-shadow: none !important;
+}
+.noback {
+    background: inherit !important;
+}
+
 .mat-drawer-inner-container {
     scrollbar-width: thin;
     overflow-x: hidden !important;
