@@ -9,6 +9,7 @@ before_script:
     - npm install -g tslint
     - cd functions
     - npm install
+    - cd ..
 script:
     - npm install
     - npm run build
