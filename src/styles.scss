@@ -3,6 +3,7 @@
 
 html,
 body {
+    overflow: hidden;
     height: 100%;
     margin: 0;
 }
@@ -22,7 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 1vmin;
 }
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);

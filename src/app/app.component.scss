@@ -51,7 +51,8 @@ div#underconstructioncont {
 }
 
 .content {
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     scrollbar-width: thin;
     z-index: auto;
 }
