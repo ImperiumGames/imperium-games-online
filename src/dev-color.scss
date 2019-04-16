@@ -1,0 +1,91 @@
+.zebra.red {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(128, 0, 0, 0.33),
+        rgba(128, 0, 0, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.zebra.green {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 128, 0, 0.33),
+        rgba(0, 128, 0, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.zebra.blue {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 128, 0.33),
+        rgba(0, 0, 128, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.zebra.cyan {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 128, 128, 0.33),
+        rgba(0, 128, 128, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.zebra.magenta {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(128, 0, 128, 0.33),
+        rgba(128, 0, 128, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.zebra.yellow {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(128, 128, 0, 0.33),
+        rgba(128, 128, 0, 0.33) 0.5vw,
+        rgba(0, 0, 0, 0) 0.5vw,
+        rgba(0, 0, 0, 0) 1vw
+    );
+}
+
+.solid.red {
+    background: rgba(128, 0, 0, 0.33);
+}
+
+.solid.green {
+    background: rgba(0, 128, 0, 0.33);
+}
+
+.solid.blue {
+    background: rgba(0, 0, 128, 0.33);
+}
+
+.solid.cyan {
+    background: rgba(0, 128, 128, 0.33);
+}
+
+.solid.magenta {
+    background: rgba(128, 0, 128, 0.33);
+}
+
+.solid.yellow {
+    background: rgba(128, 128, 0, 0.33);
+}
+
+.border.red {
+    border: 0.5vw rgba(128, 0, 0, 0.33) solid;
+}
+
+.border.green {
+    border: 0.5vw rgba(0, 128, 0, 0.33) solid;
+}

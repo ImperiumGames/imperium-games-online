@@ -1,0 +1,131 @@
+.grid-wallpaper {
+    grid-area: wallpaper;
+}
+
+.grid-header {
+    grid-area: header;
+}
+.grid-content {
+    overflow-y: auto;
+    grid-area: content;
+}
+.grid-toc {
+    grid-area: toc;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+.grid-wallpaper > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+@media (max-aspect-ratio: 1/1) {
+    .grid-wrapper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        width: 100vw;
+    }
+
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 1vw repeat(12, auto) 1vw;
+        grid-template-rows: 38.2vh 5vw 5vw auto 10vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". toc toc toc toc toc toc toc toc toc toc toc toc ."
+            ". content content content content content content content content content content content content ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .grid-wrapper {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 61.8vw;
+    }
+
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 2vw repeat(12, auto) 2vw;
+        grid-template-rows: 38.2vh 5vw 2vw auto 10vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". toc toc toc toc toc toc toc toc toc toc toc toc ."
+            ". content content content content content content content content content content content content ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}
+
+@media (min-aspect-ratio: 3/2) {
+    .grid-wrapper {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 61.8vw;
+    }
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 2vw repeat(12, auto) 2vw;
+        grid-template-rows: 38.2vh 5vw auto 10vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". content content content content content content  content content content toc toc toc ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}
+
+@media (min-aspect-ratio: 2/1) {
+    .grid-wrapper {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 50vw;
+    }
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 2vw repeat(12, auto) 2vw;
+        grid-template-rows: 38.2vh 5vw auto 10vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". content content content content content content  content content content toc toc toc ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}

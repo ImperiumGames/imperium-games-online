@@ -2,6 +2,26 @@
 .example-button-row a {
     margin: 8px;
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    // width: 75%;
+    //flex-basis: auto;
+    // flex-grow: 0;
+}
+.right {
+    position: sticky;
+    top: 100px;
+    height: 50vh;
+}
+
+.right-inner {
+    margin: 20px;
+    width: 240px;
+}
 
 .gdoc-container {
 }

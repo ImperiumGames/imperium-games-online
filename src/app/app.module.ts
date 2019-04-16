@@ -25,6 +25,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { WorldMapComponent } from './world-map/world-map.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { GridTemplateComponent } from './grid-template/grid-template.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
         HeroSearchComponent,
         ExampleComponent,
         GuidesComponent,
-        WorldMapComponent
+        WorldMapComponent,
+        GridTemplateComponent
     ],
     imports: [
         BrowserModule,

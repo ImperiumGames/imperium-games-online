@@ -1,4 +1,5 @@
 /* Application-wide Styles */
+@import "./dev-color.scss";
 
 html,
 body {
@@ -10,7 +11,7 @@ body {
     box-shadow: none !important;
 }
 .noback {
-    background: inherit !important;
+    background: none !important;
 }
 
 .mat-drawer-inner-container {
@@ -35,9 +36,7 @@ body {
 ::-webkit-scrollbar-thumb:active {
     background: rgba(0, 0, 0, 0.4);
 }
-.border {
-    border: 2px red solid;
-}
+
 .pad-right-16 {
     padding-right: 16px;
 }

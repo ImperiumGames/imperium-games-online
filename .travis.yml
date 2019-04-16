@@ -9,9 +9,11 @@ before_script:
     # - npm install -g tslint
     - cd functions
     - npm install
+    - npm audit fix
     - cd ..
 script:
     - npm install
+    - npm audit fix
     - npm run build
 deploy:
     skip_cleanup: true
