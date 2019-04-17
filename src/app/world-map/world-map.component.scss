@@ -17,17 +17,6 @@ mat-expansion-panel-header {
 mat-checkbox {
     padding-left: 20px !important;
 }
-.legend-outer {
-    // background-color: rgba(0, 0, 139, 0.33);
-    height: 100%;
-    position: fixed;
-    right: 0px;
-    top: 64px;
-    padding: 2vw;
-    overflow-x: hidden;
-    overflow-y: auto;
-    pointer-events: none;
-}
 
 div.map-container {
     position: relative;
@@ -36,10 +25,11 @@ div.map-container {
     margin: 0px;
     padding: 0px;
     border-radius: 4px;
-    overflow: visible;
+    //overflow: hidden;
 }
 img.map {
-    width: inherit;
+    width: 100%;
+    height: 100%;
     object-fit: inherit;
     border-radius: 4px;
 }
@@ -47,7 +37,7 @@ img.map {
 .marker-32 {
     position: absolute;
     // width: calc(5vh / 3);
-    width: 2.5vh;
+    width: 2vmin;
     opacity: 0.8;
 }
 
@@ -65,11 +55,14 @@ img.map {
     grid-area: header;
 }
 .grid-content {
-    overflow-y: auto;
     grid-area: content;
 }
 .grid-toc {
     grid-area: toc;
+}
+
+.grid-comments {
+    grid-area: comments;
 }
 
 .grid-footer {
@@ -83,17 +76,29 @@ img.map {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
-@media (max-aspect-ratio: 1/1) {
+
+/* @media (max-aspect-ratio: 9/16) {
     .marker-32 {
         position: absolute;
         // width: calc(5vh / 3);
-        width: 2.25vh;
+        width: 1.5vmax;
+        opacity: 0.8;
+    }
+}
+ */
+
+/* Mobile */
+@media (max-width: 900px) {
+    .marker-32 {
+        position: absolute;
+        // width: calc(5vh / 3);
+        width: 2.25vmax;
         opacity: 0.8;
     }
 
     .marker-72 {
         position: absolute;
-        width: 5vh;
+        width: 5vmax;
         opacity: 0.8;
     }
 
@@ -104,10 +109,7 @@ img.map {
         border: none;
         box-shadow: none;
         padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0;
         width: 100vw;
     }
 
@@ -116,25 +118,27 @@ img.map {
         height: inherit;
         display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
-        grid-column-gap: 2vw;
-        grid-row-gap: 2vw;
+        grid-template-rows: 38.2vh repeat(4, auto) 10vw;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
         grid-template-areas:
             "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
             ". header header header header header header header header header header header header ."
             ". toc toc toc toc toc toc toc toc toc toc toc toc ."
             ". content content content content content content content content content content content content ."
+            ". comments comments comments comments comments comments comments comments comments comments comments comments ."
             "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 }
 
-@media (min-aspect-ratio: 1/1) {
+/* Narrow */
+@media (min-width: 900px) {
     .grid-wrapper {
         padding: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
         width: 90vw;
     }
 
@@ -143,65 +147,69 @@ img.map {
 
         height: inherit;
         display: grid;
-        grid-template-columns: 2vw repeat(12, auto) 2vw;
-        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
-        grid-column-gap: 2vw;
-        grid-row-gap: 2vw;
-        grid-template-areas:
-            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
-            ". header header header header header header header header header header header header ."
-            ". content content content content content content  content content content toc toc toc ."
-            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
-    }
-}
-
-@media (min-aspect-ratio: 3/2) and (min-width: 1200px) {
-    .grid-wrapper {
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-        width: 61.8vw;
-    }
-    .grid-container {
-        width: inherit;
-        height: inherit;
-        display: grid;
-        grid-template-columns: 2vw repeat(12, auto) 2vw;
-        grid-template-rows: 38.2vh 5vw auto 10vw;
-        grid-column-gap: 2vw;
-        grid-row-gap: 2vw;
-        grid-template-areas:
-            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
-            ". header header header header header header header header header header header header ."
-            ". content content content content content content  content content content toc toc toc ."
-            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
-    }
-}
-
-@media (min-aspect-ratio: 2/1) and (min-width: 1200px) {
-    .grid-wrapper {
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        width: 61.8vw;
-    }
-    .grid-container {
-        width: inherit;
-        height: inherit;
-
-        display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh 5vw auto 10vw;
+        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:
             "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
             ". header header header header header header header header header header header header ."
             ". content content content content content content  content content content toc toc toc ."
+            ". comments comments comments comments comments comments comments comments comments comments comments comments ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}
+
+/* Wide */
+@media (min-width: 1200px) and (min-aspect-ratio: 3/2) {
+    .grid-wrapper {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 61.8vw;
+    }
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 1vw repeat(12, auto) 1vw;
+        grid-template-rows: 38.2vh repeat(3, auto) 1vw;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". content content content content content content  content content content toc toc toc ."
+            ". comments comments comments comments comments comments comments comments comments comments comments comments ."
+            "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
+}
+
+/* Ultra wide */
+@media (min-width: 2000px) and (min-aspect-ratio: 2/1) {
+    .grid-wrapper {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 61.8vw;
+    }
+    .grid-container {
+        width: inherit;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 1vw repeat(12, auto) 1vw;
+        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+        grid-template-areas:
+            "wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper wallpaper"
+            ". header header header header header header header header header header header header ."
+            ". content content content content content content content content content toc toc toc ."
+            ". comments comments comments comments comments comments comments comments comments comments comments comments ."
             "footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
     }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Location } from '@angular/common';
 @Component({
     selector: 'app-world-map',
     templateUrl: './world-map.component.html',
@@ -28,7 +28,9 @@ export class WorldMapComponent implements OnInit {
     oreShadmetal = true;
     oreXermetal = true;
 
-    constructor() {}
+    pageId = this.location.path();
+
+    constructor(private location: Location) {}
 
     ngOnInit() {}
 }

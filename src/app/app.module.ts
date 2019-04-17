@@ -26,7 +26,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { WorldMapComponent } from './world-map/world-map.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { GridTemplateComponent } from './grid-template/grid-template.component';
-
+import { DisqusModule } from 'ngx-disqus';
 @NgModule({
     declarations: [
         AppComponent,
@@ -64,6 +64,7 @@ import { GridTemplateComponent } from './grid-template/grid-template.component';
         MatTabsModule,
         MatExpansionModule,
         MatCheckboxModule,
+        DisqusModule.forRoot('imperiumgames'),
         MarkdownModule.forRoot({ loader: HttpClientModule })
     ],
     providers: [],

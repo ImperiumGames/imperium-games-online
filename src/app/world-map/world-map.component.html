@@ -3,10 +3,10 @@
         <div class="grid-wallpaper">
             <img src="../assets/img/wallpaper.jpg" />
         </div>
-        <div class="grid-header border zebra red">
+        <div class="grid-header">
             <h1>Карта ресурсов Арбореи</h1>
         </div>
-        <div class="grid-content zebra green">
+        <div class="grid-content">
             <div class="map-container mat-elevation-z3">
                 <div *ngIf="fishing">
                     <img
@@ -667,7 +667,7 @@
                                 left: 61%;
                                 bottom: 12%;
                                 "
-                        src="../assets/img/essenceCrimson.png"
+                        src="../assets/img/essenceOpal.png"
                     />
                 </div>
                 <div *ngIf="oreNormetal">
@@ -699,7 +699,7 @@
                 <img class="map" src="../assets/img/map_world.png" />
             </div>
         </div>
-        <div class="grid-toc zebra yellow">
+        <div class="grid-toc">
             <div class="legend-inner">
                 <mat-expansion-panel expanded class="menu-item noshadow noback">
                     <mat-expansion-panel-header>
@@ -734,8 +734,10 @@
                 <mat-checkbox class="menu-item" [(ngModel)]="BAM69">БАМЫ 65-69</mat-checkbox>
             </div>
         </div>
-        <div class="grid-footer zebra blue"></div>
+        <div class="grid-comments">
+            {{ pageId }}
+            <disqus [identifier]="pageId"></disqus>
+        </div>
+        <div class="grid-footer"></div>
     </div>
 </mat-card>
-
-<div class="legend-outer"></div>
