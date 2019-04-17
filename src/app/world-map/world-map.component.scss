@@ -106,7 +106,7 @@ img.map {
         padding: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: 0;
         width: 100vw;
     }
@@ -155,7 +155,7 @@ img.map {
     }
 }
 
-@media (min-aspect-ratio: 3/2) and (min-width: 1200) {
+@media (min-aspect-ratio: 3/2) and (min-width: 1200px) {
     .grid-wrapper {
         padding: 0;
         margin-left: auto;
@@ -180,7 +180,7 @@ img.map {
     }
 }
 
-@media (min-aspect-ratio: 2/1) and (min-width: 1200) {
+@media (min-aspect-ratio: 2/1) and (min-width: 1200px) {
     .grid-wrapper {
         padding: 0;
         margin-left: auto;
