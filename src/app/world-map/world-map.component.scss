@@ -36,6 +36,7 @@ div.map-container {
     margin: 0px;
     padding: 0px;
     border-radius: 4px;
+    overflow: visible;
 }
 img.map {
     width: inherit;
@@ -45,7 +46,8 @@ img.map {
 
 .marker-32 {
     position: absolute;
-    width: calc(5vw / 3);
+    // width: calc(5vh / 3);
+    width: 2.5vh;
     opacity: 0.8;
 }
 
