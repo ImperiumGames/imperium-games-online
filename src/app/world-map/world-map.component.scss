@@ -36,13 +36,12 @@ img.map {
 
 .marker-32 {
     position: absolute;
-    // width: calc(5vh / 3);
-    width: 2vmin;
+    width: 1.5vmax;
     opacity: 0.8;
 }
 
 .marker-72 {
     position: absolute;
-    width: calc(15vw / 4);
+    width: 3.5vmax;
     opacity: 0.8;
 }

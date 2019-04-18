@@ -34,7 +34,7 @@ div#underconstructioncont {
 
 .mat-fab.to-top {
     position: fixed;
-    right: 40px;
+    right: calc((((100vw - 240px - 0.75vw - 2vw - 66.67vw) / 2) - 56px) / 2);
     bottom: 40px;
     z-index: 6;
 }

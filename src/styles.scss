@@ -102,40 +102,20 @@ body {
     border-top-right-radius: 4px;
 }
 
-/* @media (max-aspect-ratio: 9/16) {
-    .marker-32 {
-        position: absolute;
-        // width: calc(5vh / 3);
-        width: 1.5vmax;
-        opacity: 0.8;
-    }
+.menu {
+    scrollbar-width: thin;
+    padding: 1vw;
+    overflow: hidden;
 }
- */
 
 /* Mobile */
 @media (max-width: 900px) {
     .menu {
-        scrollbar-width: thin;
-        padding: 2vw;
-        overflow: hidden;
         top: 56px !important;
     }
 
     .container {
         height: 100%;
-    }
-
-    .marker-32 {
-        position: absolute;
-        // width: calc(5vh / 3);
-        width: 2.25vmax;
-        opacity: 0.8;
-    }
-
-    .marker-72 {
-        position: absolute;
-        width: 5vmax;
-        opacity: 0.8;
     }
 
     .grid-wallpaper > img {
@@ -170,9 +150,6 @@ body {
 /* Narrow */
 @media (min-width: 900px) {
     .menu {
-        scrollbar-width: thin;
-        padding: 2vw;
-        overflow: hidden;
         top: 64px !important;
     }
     .container {
@@ -209,12 +186,6 @@ body {
 
 /* Wide */
 @media (min-width: 1200px) and (min-aspect-ratio: 3/2) {
-    .menu {
-        scrollbar-width: thin;
-        padding: 2vw;
-        overflow: hidden;
-        top: 64px !important;
-    }
     .container {
         padding-top: 64px;
         height: 100%;
@@ -226,7 +197,7 @@ body {
         margin-right: auto;
         margin-top: 1vw;
         margin-bottom: 1vw;
-        width: 61.8vw;
+        width: 66.67vw;
     }
     .grid-container {
         width: inherit;
@@ -247,12 +218,6 @@ body {
 
 /* Ultra wide */
 @media (min-width: 2000px) and (min-aspect-ratio: 2/1) {
-    .menu {
-        scrollbar-width: thin;
-        padding: 2vw;
-        overflow: hidden;
-        top: 64px !important;
-    }
     .container {
         padding-top: 64px;
         height: 100%;

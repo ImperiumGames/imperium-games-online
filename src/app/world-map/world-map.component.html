@@ -700,42 +700,39 @@
             </div>
         </div>
         <div class="grid-toc">
-            <div class="legend-inner">
-                <mat-expansion-panel expanded class="menu-item noshadow noback">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            <mat-icon class="md-24 pad-right-16">spa</mat-icon>
-                            Сбор
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <div class="menu-exp-cont">
-                        <mat-checkbox class="menu-item" [(ngModel)]="essenceAzure">essenceAzure</mat-checkbox>
+            <mat-expansion-panel expanded class="menu-item noshadow noback">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <mat-icon class="md-24 pad-right-16">spa</mat-icon>
+                        Сбор
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="menu-exp-cont">
+                    <mat-checkbox class="menu-item" [(ngModel)]="essenceAzure">essenceAzure</mat-checkbox>
 
-                        <mat-checkbox class="menu-item" [(ngModel)]="essenceCrimson">essenceCrimson</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="essenceEarth">essenceEarth</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="essenceObsidian">essenceObsidian</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="essenceOpal">essenceOpal</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="essenceCrimson">essenceCrimson</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="essenceEarth">essenceEarth</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="essenceObsidian">essenceObsidian</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="essenceOpal">essenceOpal</mat-checkbox>
 
-                        <mat-checkbox class="menu-item" [(ngModel)]="herbApple">herbApple</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="herbCobseed">herbCobseed</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="herbMoongourd">herbMoongourd</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="herbMushroom">herbMushroom</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="herbVeridia">herbVeridia</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="herbApple">herbApple</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="herbCobseed">herbCobseed</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="herbMoongourd">herbMoongourd</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="herbMushroom">herbMushroom</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="herbVeridia">herbVeridia</mat-checkbox>
 
-                        <mat-checkbox class="menu-item" [(ngModel)]="oreCobala">oreCobala</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="oreGalborne">oreGalborne</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="oreNormetal">oreNormetal</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="oreShadmetal">oreShadmetal</mat-checkbox>
-                        <mat-checkbox class="menu-item" [(ngModel)]="oreXermetal">oreXermetal</mat-checkbox>
-                    </div>
-                </mat-expansion-panel>
+                    <mat-checkbox class="menu-item" [(ngModel)]="oreCobala">oreCobala</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="oreGalborne">oreGalborne</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="oreNormetal">oreNormetal</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="oreShadmetal">oreShadmetal</mat-checkbox>
+                    <mat-checkbox class="menu-item" [(ngModel)]="oreXermetal">oreXermetal</mat-checkbox>
+                </div>
+            </mat-expansion-panel>
 
-                <mat-checkbox class="menu-item" [(ngModel)]="fishing">Рыба</mat-checkbox>
-                <mat-checkbox class="menu-item" [(ngModel)]="BAM69">БАМЫ 65-69</mat-checkbox>
-            </div>
+            <mat-checkbox class="menu-item" [(ngModel)]="fishing">Рыба</mat-checkbox>
+            <mat-checkbox class="menu-item" [(ngModel)]="BAM69">БАМЫ 65-69</mat-checkbox>
         </div>
         <div class="grid-comments">
-            {{ pageId }}
             <disqus [identifier]="pageId"></disqus>
         </div>
         <div class="grid-footer"></div>
