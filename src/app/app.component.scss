@@ -93,11 +93,6 @@ $tablet-portrait: 900px;
 $tablet-landscape: 1200px;
 $desktop: 1800px;
 
-.container {
-    padding-top: 64px;
-    height: 100%;
-}
-
 .inner-div {
     padding: 0;
     width: calc(#{$vw} * #{$container-width-desktop-wide});

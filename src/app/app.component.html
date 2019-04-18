@@ -25,8 +25,8 @@
     <marquee class="underconstruction mat-elevation-z6" scrollamount="4">☢ ☢ ☢ Under Construction ☢ ☢ ☢</marquee>
 </div>
 
-<mat-sidenav-container class="container" [hasBackdrop]="false">
-    <mat-sidenav class="menu" #sidenav [mode]="'over'" [autoFocus]="'false'">
+<mat-sidenav-container class="container">
+    <mat-sidenav class="menu" #sidenav [mode]="mobileQuery.matches ? 'side' : 'over'" [autoFocus]="'false'">
         <div class="menu-container">
             <mat-expansion-panel class="menu-item noshadow noback">
                 <mat-expansion-panel-header>
@@ -41,6 +41,10 @@
                     <a mat-button class="text-left menu-item" routerLink="/guides/archer"> archer</a>
                 </div>
             </mat-expansion-panel>
+
+            <a mat-button class="text-left menu-item" routerLink="/links"
+                ><mat-icon class="md-24 pad-right-16">map</mat-icon> map
+            </a>
 
             <a mat-button class="text-left menu-item" routerLink="/map"
                 ><mat-icon class="md-24 pad-right-16">map</mat-icon> map

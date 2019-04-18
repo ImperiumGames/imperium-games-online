@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExampleComponent } from './example/example.component';
+import { GridTemplateComponent } from './grid-template/grid-template.component';
 import { GuidesComponent } from './guides/guides.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { LinksComponent } from './links/links.component';
 import { WorldMapComponent } from './world-map/world-map.component';
-import { GridTemplateComponent } from './grid-template/grid-template.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/map', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'example', component: ExampleComponent },
     { path: 'detail/:id', component: HeroDetailComponent },
     { path: 'dev/grid', component: GridTemplateComponent },
+    { path: 'links', component: LinksComponent },
     { path: '**', redirectTo: '/example' }
 ];
 

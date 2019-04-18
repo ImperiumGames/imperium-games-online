@@ -27,6 +27,7 @@ import { WorldMapComponent } from './world-map/world-map.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { GridTemplateComponent } from './grid-template/grid-template.component';
 import { DisqusModule } from 'ngx-disqus';
+import { LinksComponent } from './links/links.component';
 @NgModule({
     declarations: [
         AppComponent,
@@ -38,7 +39,8 @@ import { DisqusModule } from 'ngx-disqus';
         ExampleComponent,
         GuidesComponent,
         WorldMapComponent,
-        GridTemplateComponent
+        GridTemplateComponent,
+        LinksComponent
     ],
     imports: [
         BrowserModule,
