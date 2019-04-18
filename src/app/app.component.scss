@@ -109,13 +109,3 @@ div.wallpaper {
     height: calc(#{$vw} * #{$container-width-desktop-wide} * #{$wp-ar});
     margin: 0;
 }
-
-.menu {
-    scrollbar-width: thin;
-    padding: 2vw;
-    overflow: hidden;
-    // position: fixed;
-    top: 64px;
-    box-shadow: none;
-    background-color: inherit;
-}

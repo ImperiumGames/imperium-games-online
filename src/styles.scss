@@ -15,6 +15,10 @@ body {
     background: none !important;
 }
 
+.noborder {
+    border: none !important;
+}
+
 .mat-drawer-inner-container {
     scrollbar-width: thin;
     overflow-x: hidden !important;
@@ -110,6 +114,13 @@ body {
 
 /* Mobile */
 @media (max-width: 900px) {
+    .menu {
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        top: 56px !important;
+    }
+
     .container {
         height: 100%;
     }
@@ -158,6 +169,12 @@ body {
 
 /* Narrow */
 @media (min-width: 900px) {
+    .menu {
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        top: 64px !important;
+    }
     .container {
         padding-top: 64px;
         height: 100%;
@@ -192,6 +209,12 @@ body {
 
 /* Wide */
 @media (min-width: 1200px) and (min-aspect-ratio: 3/2) {
+    .menu {
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        top: 64px !important;
+    }
     .container {
         padding-top: 64px;
         height: 100%;
@@ -224,6 +247,12 @@ body {
 
 /* Ultra wide */
 @media (min-width: 2000px) and (min-aspect-ratio: 2/1) {
+    .menu {
+        scrollbar-width: thin;
+        padding: 2vw;
+        overflow: hidden;
+        top: 64px !important;
+    }
     .container {
         padding-top: 64px;
         height: 100%;
