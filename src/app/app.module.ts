@@ -28,6 +28,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { GridTemplateComponent } from './grid-template/grid-template.component';
 import { DisqusModule } from 'ngx-disqus';
 import { LinksComponent } from './links/links.component';
+import { SpeedDialFabComponent } from './speed-dial-fab/speed-dial-fab.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -40,7 +43,8 @@ import { LinksComponent } from './links/links.component';
         GuidesComponent,
         WorldMapComponent,
         GridTemplateComponent,
-        LinksComponent
+        LinksComponent,
+        SpeedDialFabComponent
     ],
     imports: [
         BrowserModule,
@@ -66,6 +70,7 @@ import { LinksComponent } from './links/links.component';
         MatTabsModule,
         MatExpansionModule,
         MatCheckboxModule,
+        MatTooltipModule,
         DisqusModule.forRoot('imperiumgames'),
         MarkdownModule.forRoot({ loader: HttpClientModule })
     ],

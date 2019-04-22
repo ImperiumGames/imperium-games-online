@@ -1,0 +1,33 @@
+<!-- <div id="fab-dismiss"
+     *ngIf="fabTogglerState==='active'"
+     (click)="onToggleFab()">
+</div> -->
+
+<div class="fab-container">
+    <button mat-fab class="fab-toggler" (click)="onToggleFab()" style="overflow:hidden; background-color: #a00000">
+        <mat-icon
+            inline
+            svgIcon="aquila"
+            [@fabToggler]="{ value: fabTogglerState }"
+            style="height:56px; width: 56px; margin-top: -16px"
+        ></mat-icon>
+    </button>
+    <div [@speedDialStagger]="buttons.length">
+        <button
+            *ngFor="let btn of buttons"
+            mat-mini-fab
+            class="fab-secondary"
+            color="secondary"
+            [ngStyle]="{ 'background-color': btn.color }"
+            [matTooltip]="'## ' + buttons.indexOf(btn)"
+            matTooltipPosition="before"
+            aria-label="Button that displays a tooltip in various positions"
+            #tooltip{{buttons.indexOf(btn)}}="matTooltip"
+            matTooltipHideDelay="99999"
+            (click)="toggleLabel('tooltip', buttons.indexOf(btn))"
+        >
+            <mat-icon *ngIf="btn.svg" svgIcon="{{ btn.icon }}"></mat-icon>
+            <mat-icon *ngIf="!btn.svg">{{ btn.icon }}</mat-icon>
+        </button>
+    </div>
+</div>

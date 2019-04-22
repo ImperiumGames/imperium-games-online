@@ -1,6 +1,8 @@
 import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-root',
@@ -8,14 +10,40 @@ import { MediaMatcher } from '@angular/cdk/layout';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy {
+    FabOptions = {
+        buttons: [
+            {
+                icon: 'discord',
+                svg: true,
+                color: '#7289da'
+            },
+            {
+                icon: 'lightbulb_outline',
+                svg: false
+            },
+            {
+                icon: 'lock',
+                svg: false
+            }
+        ]
+    };
+
     mobileQuery: MediaQueryList;
 
-    private _mobileQueryListener: () => void;
+    private mobileQueryListener: () => void;
 
-    constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    constructor(
+        iconRegistry: MatIconRegistry,
+        sanitizer: DomSanitizer,
+        changeDetectorRef: ChangeDetectorRef,
+        media: MediaMatcher
+    ) {
+        iconRegistry.addSvgIcon('discord', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/discord.svg'));
+        iconRegistry.addSvgIcon('aquila', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/aquila.svg'));
+
         this.mobileQuery = media.matchMedia('(min-width: 1200px) and (min-aspect-ratio: 3/2)');
-        this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-        this.mobileQuery.addListener(this._mobileQueryListener);
+        this.mobileQueryListener = () => changeDetectorRef.detectChanges();
+        this.mobileQuery.addListener(this.mobileQueryListener);
     }
 
     title = 'Alex Playground';
@@ -30,6 +58,6 @@ export class AppComponent implements OnDestroy {
     }
 
     ngOnDestroy(): void {
-        this.mobileQuery.removeListener(this._mobileQueryListener);
+        this.mobileQuery.removeListener(this.mobileQueryListener);
     }
 }
