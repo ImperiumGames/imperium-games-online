@@ -1,5 +1,14 @@
 /* Application-wide Styles */
+
+// font-family: 'Open Sans Condensed', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Roboto Mono', monospace;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Roboto', sans-serif;
+
 @import "./dev-color.scss";
+@import "~@material/typography/mdc-typography";
 
 html,
 body {
@@ -17,6 +26,10 @@ body {
 
 .noborder {
     border: none !important;
+}
+
+.nomargin {
+    margin: 0 !important;
 }
 
 .mat-drawer-inner-container {
@@ -74,6 +87,7 @@ body {
 
 .grid-wallpaper {
     grid-area: wallpaper;
+    position: relative;
 }
 
 .grid-header {
@@ -100,6 +114,29 @@ body {
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+
+.grid-wallpaper > .header-container {
+    color: rgba(240, 240, 224, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset 0px -20vh 20vh -10vh rgba(0, 0, 0, 0.9);
+}
+
+.header-container > .header {
+    // font-family: "Open Sans Condensed", sans-serif;
+    // font-weight: 100;
+    // font-size: 72px;
+    // line-height: 96px;
+    // font-kerning: normal;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2vmax;
 }
 
 .menu {
@@ -134,7 +171,7 @@ body {
         height: inherit;
         display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh repeat(4, auto) 10vw;
+        grid-template-rows: 38.2vh repeat(4, auto) 1vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:
@@ -172,7 +209,7 @@ body {
         height: inherit;
         display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
+        grid-template-rows: 38.2vh repeat(3, auto) 1vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:
@@ -204,7 +241,7 @@ body {
         height: inherit;
         display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh repeat(3, auto) 1vw;
+        grid-template-rows: 50vh repeat(3, auto) 1vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:
@@ -236,7 +273,7 @@ body {
         height: inherit;
         display: grid;
         grid-template-columns: 1vw repeat(12, auto) 1vw;
-        grid-template-rows: 38.2vh repeat(3, auto) 10vw;
+        grid-template-rows: 38.2vh repeat(3, auto) 1vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         grid-template-areas:

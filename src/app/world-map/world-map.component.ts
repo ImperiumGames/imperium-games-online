@@ -6,6 +6,9 @@ import { Location } from '@angular/common';
     styleUrls: ['./world-map.component.scss']
 })
 export class WorldMapComponent implements OnInit {
+    componentWallpaper = '../assets/img/tantibus.jpg';
+    componentHeader = 'Карта ресурсов Арбореи';
+
     fishing = true;
     BAM69 = true;
 

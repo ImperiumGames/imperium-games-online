@@ -1,6 +1,6 @@
 {
-    "name": "angular-tour-of-heroes",
-    "version": "0.0.0",
+    "name": "imperium-games-online",
+    "version": "0.0.1",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -22,6 +22,7 @@
         "@angular/platform-browser": "^7.2.13",
         "@angular/platform-browser-dynamic": "^7.2.13",
         "@angular/router": "^7.2.13",
+        "@material/typography": "^1.0.0",
         "@sebgroup/ng-magic-iframe": "^1.0.2",
         "angular-in-memory-web-api": "^0.8.0",
         "core-js": "^2.6.5",
