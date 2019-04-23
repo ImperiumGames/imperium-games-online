@@ -13,21 +13,22 @@
         ></mat-icon>
     </button>
     <div [@speedDialStagger]="buttons.length">
-        <button
+        <a
             *ngFor="let btn of buttons"
             mat-mini-fab
+            href="{{ btn.link }}"
+            target="_blank"
             class="fab-secondary"
             color="secondary"
             [ngStyle]="{ 'background-color': btn.color }"
-            [matTooltip]="'## ' + buttons.indexOf(btn)"
+            [matTooltip]="btn.toolTip"
             matTooltipPosition="before"
             aria-label="Button that displays a tooltip in various positions"
-            #tooltip{{buttons.indexOf(btn)}}="matTooltip"
-            matTooltipHideDelay="99999"
+            #{{btn.toolTip}}="matTooltip"
             (click)="toggleLabel('tooltip', buttons.indexOf(btn))"
         >
             <mat-icon *ngIf="btn.svg" svgIcon="{{ btn.icon }}"></mat-icon>
             <mat-icon *ngIf="!btn.svg">{{ btn.icon }}</mat-icon>
-        </button>
+        </a>
     </div>
 </div>

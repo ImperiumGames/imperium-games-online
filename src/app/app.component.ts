@@ -15,11 +15,16 @@ export class AppComponent implements OnDestroy {
             {
                 icon: 'discord',
                 svg: true,
-                color: '#7289da'
+                color: '#7289da',
+                link: 'https://discord.gg/TUdNyDu',
+                toolTip: 'Discord'
             },
             {
-                icon: 'lightbulb_outline',
-                svg: false
+                icon: 'VK',
+                svg: true,
+                color: '#5181b8',
+                link: 'https://vk.com/imperiumgames',
+                toolTip: 'VK'
             },
             {
                 icon: 'lock',
@@ -40,6 +45,7 @@ export class AppComponent implements OnDestroy {
     ) {
         iconRegistry.addSvgIcon('discord', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/discord.svg'));
         iconRegistry.addSvgIcon('aquila', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/aquila.svg'));
+        iconRegistry.addSvgIcon('VK', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/VK.svg'));
 
         this.mobileQuery = media.matchMedia('(min-width: 1200px) and (min-aspect-ratio: 3/2)');
         this.mobileQueryListener = () => changeDetectorRef.detectChanges();
