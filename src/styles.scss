@@ -11,7 +11,10 @@
 //@import "~@material/typography/mdc-typography";
 @import "./assets/mdc.typography.css";
 
-html,
+html {
+    // height: 100%;
+    margin: 0;
+}
 body {
     // height: 100%;
     margin: 0;
