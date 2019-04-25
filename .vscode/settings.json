@@ -1,0 +1,12 @@
+{
+	"html.format.wrapAttributes": "force-expand-multiline",
+	"html.format.preserveNewLines": false,
+	"html.format.wrapLineLength": 0,
+	"prettier.eslintIntegration": true,
+	"prettier.stylelintIntegration": true,
+	"html.format.indentInnerHtml": true,
+	"less.lint.float": "warning",
+	"less.lint.ieHack": "warning",
+	"less.lint.idSelector": "warning",
+	"editor.formatOnSave": true
+}

@@ -1,7 +1,5 @@
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { ActivatedRoute } from '@angular/router';
 import { Guide } from './guide';
 
 @Component({
@@ -33,7 +31,7 @@ export class GuidesComponent implements OnInit {
     // rawpath = this.raw + this.path;
 
     // https://raw.githubusercontent.com/ImperiumGames/guides/RU/brawler.md
-    curpath = this.location.path();
+    // curpath = this.location.path();
     viewpath: string;
     editpath: string;
 
@@ -68,12 +66,9 @@ export class GuidesComponent implements OnInit {
             '.md';
     }
 
-    constructor(private route: ActivatedRoute, private location: Location) {}
+    constructor(private route: ActivatedRoute) {}
 
     ngOnInit() {
-        // this.hero$ = this.route.paramMap.pipe(switchMap((params: ParamMap) => this.service.getHero(params.get('id'))));
-        // const fname: string = this.route.snapshot.paramMap.get('fname').toString();
-
         this.route.paramMap.subscribe(x => {
             this.getGuide(x.get('fname'));
             console.log(this.editpath);

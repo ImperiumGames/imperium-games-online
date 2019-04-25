@@ -1,6 +1,5 @@
-import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { Component } from '@angular/core';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -9,7 +8,9 @@ import { DomSanitizer } from '@angular/platform-browser';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent {
+    title = 'Alex Playground';
+
     FabOptions = {
         buttons: [
             {
@@ -33,37 +34,37 @@ export class AppComponent implements OnDestroy {
         ]
     };
 
-    mobileQuery: MediaQueryList;
+    desktop: MediaQueryList;
 
-    private mobileQueryListener: () => void;
+    // private mobileQueryListener: () => void;
 
     constructor(
         iconRegistry: MatIconRegistry,
         sanitizer: DomSanitizer,
-        changeDetectorRef: ChangeDetectorRef,
+        // changeDetectorRef: ChangeDetectorRef,
         media: MediaMatcher
     ) {
         iconRegistry.addSvgIcon('discord', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/discord.svg'));
         iconRegistry.addSvgIcon('aquila', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/aquila.svg'));
         iconRegistry.addSvgIcon('VK', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/VK.svg'));
 
-        this.mobileQuery = media.matchMedia('(min-width: 1200px) and (min-aspect-ratio: 3/2)');
-        this.mobileQueryListener = () => changeDetectorRef.detectChanges();
-        this.mobileQuery.addListener(this.mobileQueryListener);
+        this.desktop = media.matchMedia('(min-width: 1200px) and (min-aspect-ratio: 3/2)');
+        // this.mobileQueryListener = () => changeDetectorRef.detectChanges();
+        // this.mobileQuery.addListener(this.mobileQueryListener);
+        // addEventListener('123', this.mobileQueryListener);
     }
 
-    title = 'Alex Playground';
+    // @ViewChild('sidenav') sidenav: MatSidenav;
 
-    @ViewChild('sidenav') sidenav: MatSidenav;
+    // reason = '';
 
-    reason = '';
+    // close(reason: string) {
+    //     this.reason = reason;
+    //     this.sidenav.close();
+    // }
 
-    close(reason: string) {
-        this.reason = reason;
-        this.sidenav.close();
-    }
-
-    ngOnDestroy(): void {
-        this.mobileQuery.removeListener(this.mobileQueryListener);
-    }
+    // ngOnDestroy(): void {
+    // this.mobileQuery.removeListener(this.mobileQueryListener);
+    //  removeEventListener('123', this.mobileQueryListener);
+    // }
 }

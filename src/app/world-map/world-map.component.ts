@@ -35,5 +35,7 @@ export class WorldMapComponent implements OnInit {
 
     constructor(private location: Location) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+
+    }
 }

@@ -25,16 +25,16 @@
     <marquee class="underconstruction mat-elevation-z6" scrollamount="4">☢ ☢ ☢ Under Construction ☢ ☢ ☢</marquee>
 </div>
 
-<mat-sidenav-container class="container" [hasBackdrop]="!mobileQuery.matches">
+<mat-sidenav-container class="container" [hasBackdrop]="!desktop.matches">
     <mat-sidenav
         fixedInViewport
         class="menu"
-        [class.noback]="mobileQuery.matches"
-        [class.noborder]="mobileQuery.matches"
-        [class.noshadow]="mobileQuery.matches"
+        [class.noback]="desktop.matches"
+        [class.noborder]="desktop.matches"
+        [class.noshadow]="desktop.matches"
         #sidenav
-        [opened]="mobileQuery.matches"
-        [mode]="mobileQuery.matches ? 'side' : 'over'"
+        [opened]="desktop.matches"
+        [mode]="desktop.matches ? 'side' : 'over'"
         [autoFocus]="'false'"
     >
         <div class="menu-container">
@@ -89,9 +89,12 @@
                         ><mat-icon class="md-24 pad-right-16">code</mat-icon> Example</a
                     >
 
-                    <a mat-button class="text-left menu-item" routerLink="/dev/grid"
-                        ><mat-icon class="md-24 pad-right-16">code</mat-icon> Grid Template</a
-                    >
+                    <a mat-button class="text-left menu-item" routerLink="/dev/grid">
+                        <mat-icon class="md-24 pad-right-16">
+                            code
+                        </mat-icon>
+                        Grid Template
+                    </a>
 
                     <a
                         mat-button
@@ -101,6 +104,7 @@
                     >
                         <mat-icon class="md-24 pad-right-16">open_in_new</mat-icon> ngx-markdown
                     </a>
+
                     <a
                         mat-button
                         class="text-left menu-item"
