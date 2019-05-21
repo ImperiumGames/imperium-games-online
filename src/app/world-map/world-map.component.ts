@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Node } from './nodes.d';
+
 @Component({
     selector: 'app-world-map',
     templateUrl: './world-map.component.html',
     styleUrls: ['./world-map.component.scss']
 })
 export class WorldMapComponent implements OnInit {
+    Nodes: Node[];
+
     componentWallpaper = '../assets/img/tantibus.jpg';
     componentHeader = 'Карта ресурсов Арбореи';
+
+    gathering = true;
 
     fishing = true;
     BAM69 = true;
@@ -35,7 +41,5 @@ export class WorldMapComponent implements OnInit {
 
     constructor(private location: Location) {}
 
-    ngOnInit() {
-
-    }
+    ngOnInit() {}
 }

@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Guide } from './guide';
@@ -8,6 +9,11 @@ import { Guide } from './guide';
     styleUrls: ['./guides.component.css']
 })
 export class GuidesComponent implements OnInit {
+    pageId = this.location.path();
+
+    componentWallpaper = '../assets/img/wallpaper.jpg';
+    componentHeader = 'Гайды';
+
     cguide: Guide = {
         editprefix: '',
         viewprefix: '',
@@ -66,7 +72,7 @@ export class GuidesComponent implements OnInit {
             '.md';
     }
 
-    constructor(private route: ActivatedRoute) {}
+    constructor(private location: Location, private route: ActivatedRoute) {}
 
     ngOnInit() {
         this.route.paramMap.subscribe(x => {
