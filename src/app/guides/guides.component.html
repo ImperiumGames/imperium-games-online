@@ -10,16 +10,14 @@
         </div>
         <div class="grid-header"></div>
         <div class="grid-content">
-            <div style="border: 1px solid; border-color: rgba(0,0,0,.12); border-radius: 4px;">
+            <div>
                 <a mat-icon-button href="{{ editpath }}" target="_blank">
                     <mat-icon>edit</mat-icon>
                 </a>
                 <markdown [src]="viewpath"></markdown>
             </div>
         </div>
-        <div class="grid-toc">
-            ToC
-        </div>
+        <div class="grid-toc"></div>
         <div class="grid-comments">
             <disqus [identifier]="pageId"></disqus>
         </div>
