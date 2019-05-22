@@ -46,6 +46,10 @@ export class AppComponent {
     ) {
         iconRegistry.addSvgIcon('discord', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/discord.svg'));
         iconRegistry.addSvgIcon('aquila', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/aquila.svg'));
+        iconRegistry.addSvgIcon(
+            'aquila_menu',
+            sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/aquila_menu.svg')
+        );
         iconRegistry.addSvgIcon('VK', sanitizer.bypassSecurityTrustResourceUrl('../assets/ico/VK.svg'));
 
         this.desktop = media.matchMedia('(min-width: 1200px) and (min-aspect-ratio: 3/2)');

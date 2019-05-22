@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   viewBox="0 0 16.933333 16.933334"
+   version="1.1"
+   id="svg1527"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="aquila_menu.svg">
+  <defs
+     id="defs1521" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="4.5347084"
+     inkscape:cy="16.707412"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1524">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-280.06665)">
+    <g
+       inkscape:export-ydpi="96.000008"
+       inkscape:export-xdpi="96.000008"
+       inkscape:export-filename="C:\Users\alexa\Desktop\gold_red_512.png"
+       transform="matrix(0.06719576,0,0,0.06719576,0,280.06665)"
+       id="g9165"
+       style="font-family:none;mix-blend-mode:normal;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0">
+      <g
+         style="fill:#000000;fill-opacity:1"
+         id="g9163">
+        <path
+           style="fill:#000000;fill-opacity:1"
+           d="M 230.17969,94.00781 C 227.67774,83.4668 210.28711,72.39257 199.5,73.5 200.32031,69.5625 182.64258,56.06836 179.19726,53.97656 160.86328,42.7793 138.01757,31.70507 115.5,31.5 70.875,31.08985 51.35156,64.80469 42,73.86914 36.29883,79.40625 27.60351,87.52735 21,94.5 c 6.5625,0 16.20117,0 21,0 -5.57812,9.39258 -23.13281,29.98242 -21,52.5 8.98242,-12.01758 15.09375,-14.4375 22.47656,-17.71875 C 29.85937,170.17383 48.5625,210 73.5,220.5 c -2.95312,-13.125 -3.28125,-35.4375 0,-42 12.63281,21.36914 40.48242,36.54492 52.5,42 0,-22.3125 -2.29687,-49.99805 10.5,-73.5 8.28516,-15.2168 25.26563,-31.5 42,-31.5 14.27344,0 22.47656,0 42,0 2.29688,3.11719 5.25,5.25 10.5,10.5 0,-7.54687 0.69726,-14.31445 0.49219,-21 -0.12305,-3.65039 -0.45117,-7.25976 -1.3125,-10.99219 z M 153.5625,85.06641 C 144.58008,85.06641 138.14063,79.40625 136.5,73.5 134.24414,70.99805 127.76367,66.52735 126,63 c 4.51172,4.26563 38.0625,10.5 42,10.5 0,5.57813 -2.29687,11.56641 -14.4375,11.56641 z"
+           id="path9161"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>
