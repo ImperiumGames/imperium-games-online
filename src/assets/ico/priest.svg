@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="48"
+   width="48"
+   id="svg4"
+   version="1.1"
+   viewBox="0 0 48 48"
+   sodipodi:docname="priest.svg"
+   inkscape:export-filename="C:\Users\alexa\Desktop\ClassIcons\classPriest.png"
+   inkscape:export-xdpi="255.59026"
+   inkscape:export-ydpi="255.59026"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="-78.406779"
+     inkscape:cy="24"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <path
+     id="path2"
+     display="inline"
+     d="m 26.874339,17.190591 a 2.3228404,2.3228404 0 0 1 -2.320974,2.32097 2.3228404,2.3228404 0 0 1 -2.32284,-2.32097 2.3228404,2.3228404 0 0 1 2.32284,-2.324711 2.3228404,2.3228404 0 0 1 2.320974,2.32284 z M 16.387889,5.7016952 v 3.3664347 c 10.21152,3.8545691 -5.803361,12.3286351 -6.8731392,0 H 6.5130118 V 25.357936 h 2.999868 C 10.75098,20.270879 15.507005,17.72735 19.524285,21.804477 c 0.05611,5.554609 0.372178,11.292509 -2.261123,15.962509 1.484973,2.82967 3.147618,5.53591 7.290203,6.55146 4.142584,-1.01555 5.805234,-3.72179 7.288334,-6.55146 -2.6333,-4.67 -2.3191,-10.40977 -2.25925,-15.962509 4.01728,-4.077127 8.77143,-1.533598 10.0114,3.553459 h 2.998 V 9.0681299 h -2.998 c -1.06978,12.3286351 -17.086528,3.8545691 -6.87501,0 V 5.7016952 h -8.165474 z m 8.163606,4.3857168 c 0.450724,0 0.899584,0.407713 0.899584,1.226879 0.0561,0.8547 -0.0318,2.405131 0,3.216816 1.44944,0.476911 2.66136,1.294207 3.52728,2.659484 -0.83226,1.39146 -2.06662,2.24429 -3.52728,2.715591 v 16.762974 c 0,1.74867 -1.79356,1.74867 -1.79356,0 V 19.906182 c -1.458788,-0.469431 -2.693148,-1.324131 -3.525405,-2.715591 0.864051,-1.365277 2.075968,-2.182573 3.525405,-2.657614 0.0318,-0.813555 -0.07481,-2.363986 -0.0187,-3.218686 0.0094,-0.819166 0.46382,-1.226879 0.912678,-1.226879 z"
+     stroke-miterlimit="4"
+     style="display:inline;opacity:1;fill-opacity:1;stroke:none;stroke-width:0.11221451;stroke-miterlimit:4;stroke-opacity:1" />
+</svg>

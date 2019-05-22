@@ -38,7 +38,11 @@
         [autoFocus]="'false'"
     >
         <div class="menu-container">
-            <mat-expansion-panel class="menu-item noshadow noback">
+            <a mat-button class="text-left menu-item" routerLink="/map"
+                ><mat-icon class="md-24 pad-right-16">map</mat-icon>Карта
+            </a>
+
+            <mat-expansion-panel expanded class="menu-item noshadow noback">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
                         <mat-icon class="md-24 pad-right-16" svgIcon="aquila_menu"></mat-icon>
@@ -47,6 +51,7 @@
                 </mat-expansion-panel-header>
                 <div class="menu-exp-cont">
                     <a mat-button class="text-left menu-item" routerLink="/docs/about"> О гильдии</a>
+
                     <a mat-button class="text-left menu-item" routerLink="/docs/rules"> Устав</a>
                 </div>
             </mat-expansion-panel>
@@ -59,43 +64,88 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="menu-exp-cont">
-                    <a mat-button class="text-left menu-item" routerLink="/guides/faq"> ЧАВО</a>
+                    <a mat-button class="text-left menu-item" routerLink="/guides/faq">ЧАВО</a>
 
-                    <a mat-button class="text-left menu-item" routerLink="/guides/brawler"> brawler</a>
+                    <mat-expansion-panel class="menu-item noshadow noback">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <mat-icon class="md-24 pad-right-16">broken_image</mat-icon>
+                                Классы
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="menu-exp-cont">
+                            <a mat-button class="text-left menu-item" routerLink="/guides/archer">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="archer"></mat-icon>
+                                Лучник
+                            </a>
 
-                    <a mat-button class="text-left menu-item" routerLink="/guides/archer"> archer</a>
+                            <a mat-button class="text-left menu-item" routerLink="/guides/berserker">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="berserker"></mat-icon>
+                                Берсерк
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/brawler">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="brawler"></mat-icon>
+                                Крушитель
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/gunner">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="gunner"></mat-icon>
+                                Инженер
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/lancer">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="lancer"></mat-icon>
+                                Рыцарь
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/mystic">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="mystic"></mat-icon>
+                                Мистик
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/ninja">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="ninja"></mat-icon>
+                                Шиноби
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/priest">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="priest"></mat-icon>
+                                Жрец
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/reaper">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="reaper"></mat-icon>
+                                Жнец
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/slayer">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="slayer"></mat-icon>
+                                Убийца
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/sorcerer">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="sorcerer"></mat-icon>
+                                Маг
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/valkyrie">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="valkyrie"></mat-icon>
+                                Валькирия
+                            </a>
+
+                            <a mat-button class="text-left menu-item" routerLink="/guides/warrior">
+                                <mat-icon class="md-24 pad-right-8" svgIcon="warrior"></mat-icon>
+                                Воин
+                            </a>
+                        </div>
+                    </mat-expansion-panel>
                 </div>
             </mat-expansion-panel>
 
-            <a mat-button class="text-left menu-item" routerLink="/links"
-                ><mat-icon class="md-24 pad-right-16">map</mat-icon> map
-            </a>
-
-            <a mat-button class="text-left menu-item" routerLink="/map"
-                ><mat-icon class="md-24 pad-right-16">map</mat-icon> map
-            </a>
-
-            <a mat-button class="text-left menu-item" routerLink="/guides"
-                ><mat-icon class="md-24 pad-right-16">settings</mat-icon> Guides
-            </a>
-
-            <a mat-button class="text-left menu-item" routerLink="/dashboard"
-                ><mat-icon class="md-24 pad-right-16">settings</mat-icon> Dashboard</a
-            >
-
-            <a mat-button class="text-left menu-item" routerLink="/heroes"
-                ><mat-icon class="md-24 pad-right-16">accessible</mat-icon> Heroes</a
-            >
-
-            <a mat-button class="text-left menu-item" href="https://teralore.com/" target="_blank">
-                <mat-icon class="md-24" class="md-24 pad-right-16">apps</mat-icon>
-                teralore
-            </a>
-
-            <mat-expansion-panel expanded class="menu-item noshadow noback">
+            <mat-expansion-panel class="menu-item noshadow noback">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <mat-icon class="md-24 pad-right-16">broken_image</mat-icon>
                         dev
                     </mat-panel-title>
                 </mat-expansion-panel-header>
@@ -137,6 +187,27 @@
                     >
                         <mat-icon class="md-24" class="md-24 pad-right-16">apps</mat-icon>
                         Material Typography
+                    </a>
+
+                    <a mat-button class="text-left menu-item" routerLink="/links"
+                        ><mat-icon class="md-24 pad-right-16">map</mat-icon> map
+                    </a>
+
+                    <a mat-button class="text-left menu-item" routerLink="/guides"
+                        ><mat-icon class="md-24 pad-right-16">settings</mat-icon> Guides
+                    </a>
+
+                    <a mat-button class="text-left menu-item" routerLink="/dashboard"
+                        ><mat-icon class="md-24 pad-right-16">settings</mat-icon> Dashboard</a
+                    >
+
+                    <a mat-button class="text-left menu-item" routerLink="/heroes"
+                        ><mat-icon class="md-24 pad-right-16">accessible</mat-icon> Heroes</a
+                    >
+
+                    <a mat-button class="text-left menu-item" href="https://teralore.com/" target="_blank">
+                        <mat-icon class="md-24" class="md-24 pad-right-16">apps</mat-icon>
+                        teralore
                     </a>
                 </div>
             </mat-expansion-panel>
