@@ -20,6 +20,14 @@ body {
     margin: 0;
 }
 
+.mat-expansion-panel-body {
+
+    padding-top: 0px !important;
+    padding-right: 24px !important;
+    padding-bottom: 0px !important;
+    padding-left: 24px !important;
+}
+
 .noshadow {
     box-shadow: none !important;
 }

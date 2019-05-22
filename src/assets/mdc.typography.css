@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.mdc-typography--headline1 {
+h1 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--headline2 {
+h2 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--headline3 {
+h3 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +45,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--headline4 {
+h4 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +57,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--headline5 {
+h5 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -69,7 +69,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--headline6 {
+h6 {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -105,7 +105,7 @@
   text-transform: inherit;
 }
 
-.mdc-typography--body1 {
+body {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

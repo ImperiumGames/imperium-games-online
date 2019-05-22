@@ -30,6 +30,7 @@ import { DisqusModule } from 'ngx-disqus';
 import { LinksComponent } from './links/links.component';
 import { SpeedDialFabComponent } from './speed-dial-fab/speed-dial-fab.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { DocsComponent } from './docs/docs.component';
 
 @NgModule({
     declarations: [
@@ -44,7 +45,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         WorldMapComponent,
         GridTemplateComponent,
         LinksComponent,
-        SpeedDialFabComponent
+        SpeedDialFabComponent,
+        DocsComponent
     ],
     imports: [
         BrowserModule,
