@@ -8,5 +8,11 @@
 	"less.lint.float": "warning",
 	"less.lint.ieHack": "warning",
 	"less.lint.idSelector": "warning",
-	"editor.formatOnSave": true
+	"editor.formatOnSave": true,
+	"search.exclude": {
+		"**/node_modules": false
+	},
+	"files.watcherExclude": {
+		"**/node_modules/*/**": false
+	}
 }
