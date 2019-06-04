@@ -21,7 +21,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 
 import { speedDialFabAnimations } from './speed-dial-fab.animations';
-import { MatTooltip, matTooltipAnimations } from '@angular/material';
+import { MatTooltip, matTooltipAnimations } from '@angular/material/tooltip';
 
 @Component({
     selector: 'app-speed-dial-fab',
