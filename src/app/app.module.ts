@@ -8,7 +8,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgMagicIframeModule } from '@sebgroup/ng-magic-iframe';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,50 +33,49 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { DocsComponent } from './docs/docs.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeroesComponent,
-        HeroDetailComponent,
-        MessagesComponent,
-        DashboardComponent,
-        HeroSearchComponent,
-        ExampleComponent,
-        GuidesComponent,
-        WorldMapComponent,
-        GridTemplateComponent,
-        LinksComponent,
-        SpeedDialFabComponent,
-        DocsComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        AppRoutingModule,
-        HttpClientModule,
+  declarations: [
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent,
+    HeroSearchComponent,
+    ExampleComponent,
+    GuidesComponent,
+    WorldMapComponent,
+    GridTemplateComponent,
+    LinksComponent,
+    SpeedDialFabComponent,
+    DocsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
 
-        // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-        // and returns simulated server responses.
-        // Remove it when a real server is ready to receive requests.
-        // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-        //     dataEncapsulation: false
-        // }),
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    // HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+    //     dataEncapsulation: false
+    // }),
 
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatSidenavModule,
-        MatCardModule,
-        MatTreeModule,
-        NgMagicIframeModule,
-        MatTabsModule,
-        MatExpansionModule,
-        MatCheckboxModule,
-        MatTooltipModule,
-        DisqusModule.forRoot('imperiumgames'),
-        MarkdownModule.forRoot({ loader: HttpClientModule })
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatTreeModule,
+    MatTabsModule,
+    MatExpansionModule,
+    MatCheckboxModule,
+    MatTooltipModule,
+    DisqusModule.forRoot('imperiumgames'),
+    MarkdownModule.forRoot({ loader: HttpClientModule }),
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
