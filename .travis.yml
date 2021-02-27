@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - node
+  - 14
 branches:
   only:
     - master
-before_script:
-  - cd functions
-  - npm install
-  - cd ..
+# before_script:
+#   - cd functions
+#   - npm install
+#   - cd ..
 script:
   - npm install
   - npm run build
