@@ -9,7 +9,7 @@ before_script:
     # - npm install -g tslint
     - cd functions
     - npm install
-    - npm audit fix
+    # - npm audit fix
     - cd ..
 script:
     - npm install
