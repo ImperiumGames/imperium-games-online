@@ -13,7 +13,7 @@ before_script:
     - cd ..
 script:
     - npm install
-    - npm audit fix
+    # - npm audit fix
     - npm run build
 deploy:
     skip_cleanup: true
